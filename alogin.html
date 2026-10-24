@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connected</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    $(if refresh-timeout)
+<script>
+    setTimeout(function () {
+        location.href = './status';
+    }, 4000)
+</script>
+$(endif)
+</head>
+<body>
+    <section>
+    <header>
+        <center>
+        <img src="assets/img/Group.png" alt="" width="100%">
+        
+                <h4>Selamat Datang $(username)</h4>
+                <div class="button">
+                <button onclick="status();" id="login" class="btn-relog">Lanjutkan</button>
+                </div></center>
+                </header>
+            </section>
+
+    <script>
+        function status() {
+            console.log(" go to status");
+            window.location.href = "./status.html";
+        }
+    </script>
+    <script src="assets/js/dark.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

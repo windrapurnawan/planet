@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connected</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<script language="JavaScript">
+    function openLogin() {
+        if (window.name != 'hotspot_logout') return true;
+        open('$(link-login)', '_blank', '');
+        window.close();
+        return false;
+    }
+</script>
+<body>
+    <section>
+    <header>
+        <center>
+        <div class="menu"></div>
+        <img src="./assets/img/Group2.png" alt="" width="100%">
+                <h4>Anda telah keluar dari jaringan</h4>
+
+                <div class="button">
+                    <form action="$(link-login)" name="login" onSubmit="return openLogin()">
+                        <button type="submit" class="btn-relog">Login Kembali</button>
+                    </form>
+                </div></center>
+            </div>
+        </div>
+    </div>
+    </header>
+</section>
+<!--Simpan live chat disini-->
+
+<!--Akhir Live Chat-->    
+<script src="assets/js/dark.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
